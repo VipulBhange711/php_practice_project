@@ -1,4 +1,7 @@
+
+
 <?php
+
 
 define("HOSTNAME","localhost");
 define("USERNAME","root");
@@ -14,3 +17,4 @@ if(!$connection){
 else{
 	// echo "connection done";
 }
+?>
