@@ -19,7 +19,9 @@
 		</tr>
 	</thead>
 	<tbody>
-		<?php $query = " select *  from `student`";
+		<?php 
+		
+		$query = " select *  from `student`";
 
 		$result =  mysqli_query($connection, $query);
 
@@ -101,7 +103,23 @@
 
  if(isset($_GET['insert_msg'])){
 
-	echo "<h6>".$_GET['insert_msg']."</h6>";
+	echo "<h6 id='heading'>".$_GET['insert_msg']."</h6>";
+
+ }
+?>
+<?php
+
+ if(isset($_GET['update_msg'])){
+
+	echo "<h6 id='heading'>".$_GET['update_msg']."</h6>";
+
+ }
+?>
+<?php
+
+ if(isset($_GET['delete_msg'])){
+
+	echo "<h6 id='heading'>".$_GET['delete_msg']."</h6>";
 
  }
 ?>
