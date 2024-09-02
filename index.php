@@ -13,6 +13,9 @@
 			<th>First Name</th>
 			<th>Last Name</th>
 			<th>Age</th>
+			<th>Update</th>
+			<th>Delete</th>
+
 		</tr>
 	</thead>
 	<tbody>
@@ -32,6 +35,8 @@
 					<td><?php echo $row['first_name']; ?></td>
 					<td><?php echo $row['last_name']; ?></td>
 					<td><?php echo $row['age']; ?></td>
+					<th> <a	href="update.php?id=<?php echo $row['id']; ?>" class="btn btn-warning">update</a> </th>
+					<th> <a	href="delete.php?id=<?php echo $row['id']; ?>" class="btn btn-danger">Delete</a> </th>
 				</tr>
 
 
@@ -61,7 +66,7 @@
 						<input type="text" class="form-control" id="exampleInputEmail1" Name="f_name">
 			
 					</div>
-					
+
 					<div class="mb-3">
 						<label for="exampleInputPassword1" class="form-label">Last Name</label>
 						<input type="text" class="form-control" id="exampleInputPassword1" Name="l_name">
